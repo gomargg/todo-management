@@ -1,7 +1,6 @@
 package com.goma.todomanagement.service;
 
 import com.goma.todomanagement.dto.TodoDto;
-import com.goma.todomanagement.entity.Todo;
 
 import java.util.List;
 
@@ -16,4 +15,6 @@ public interface TodoService {
     TodoDto updateTodo(TodoDto todoDto, Long id);
 
     void deleteTodo(Long id);
+
+    TodoDto completeTodo(Long id);
 }
